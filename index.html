@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ppt maker</title>
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/index.css">
+</head>
+
+<body>
+    <div class="set">
+        <div class="colorSet">
+            <input type="color" id="fillColor">
+        </div>
+        <div class="colorSet">
+            <input type="color" id="strokeColor">
+        </div>
+        <div id="shape" value="arc" class="icon-circle">
+            <ul>
+                <li value="arc" class="icon-circle"></li>
+                <li value="ric" class="icon-square"></li>
+                <li value="tri" class="icon-triangle"></li>
+                <li value="hexagon" class="icon-octagon"></li>
+                <li value="pentagram" class="icon-star"></li>
+            </ul>
+        </div>
+        <div id="setRadius">
+            <p>
+                <label for="radius">半径：</label>
+                <input type="number" id="number" value="10">
+            </p>
+            <input type="range" value="10" id="range">
+        </div>
+        <div id="type" value="fill">&nbsp;
+            <span>填充</span>
+        </div>
+        <div id="clear">&nbsp;
+            <span>清空</span>
+        </div>
+        <div id="reBack">&nbsp;
+            <span>撤回</span>
+        </div>
+    </div>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="lib/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+}
+
+ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+@topBackColor:rgba(204, 204, 204, .4);
+
+.set {
+    padding: 20px;
+    margin-top: 0px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(102, 102, 102);
+    background-color: @topBackColor;
+    >*{
+        margin-left: 40px;
+    }
+}
+
+#setRadius{
+    display: inline-block;
+    >p{
+        margin: 0px;
+        border-radius: 2px;
+        background-color: white;
+        input{
+            width: 72px;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+
+#shape{
+    display: inline-block;
+    position: relative;
+    font-size: 68px;
+    cursor: pointer;
+    ul{
+        position: absolute;
+        left: 0px;
+        line-break: strict;
+        line-height: 0px;
+        width: 200px;
+        li{
+            display: none;
+            position: relative;
+            float: left;
+            font-size: 24px;
+            cursor: pointer;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+}
+
+#type,#clear,#reBack{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 6px double black;
+    border-radius: 50%;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    span{
+        display: inline-block;
+        position: relative;
+        font-size: 21px;
+        top: -10px;
+    }
+}
+
+.colorSet {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 6px double black;
+    background-color: black;
+    input {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+        border-radius: 50%;
+        opacity: 0;
+    }
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    margin: 25px auto;
+    border: 1px solid rgb(0, 0, 0);
+}
