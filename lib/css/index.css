@@ -54,11 +54,7 @@ ul {
 #shape ul li:hover {
   color: red;
 }
-#type,
-#clear,
-#reBack,
-#repeat,
-#save {
+.circleBtn {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -68,11 +64,7 @@ ul {
   background-color: transparent;
   cursor: pointer;
 }
-#type span,
-#clear span,
-#reBack span,
-#repeat span,
-#save span {
+.circleBtn span {
   display: inline-block;
   position: relative;
   font-size: 21px;
@@ -103,4 +95,10 @@ ul {
   height: 450px;
   margin: 25px auto;
   border: 1px solid #000000;
+}
+.addFont {
+  display: none;
+  position: absolute;
+  border: none;
+  outline: none;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ppt maker</title>
+    <title>drawBoard</title>
     <link rel="stylesheet" href="lib/css/style.css">
     <link rel="stylesheet" href="lib/css/index.css">
 </head>
@@ -34,25 +34,48 @@
             </p>
             <input type="range" value="10" id="range">
         </div>
-        <div id="type" value="fill">&nbsp;
+        <div id="type" value="fill" class="circleBtn">&nbsp;
             <span>填充</span>
         </div>
-        <div id="clear">&nbsp;
+        <div id="font" class="circleBtn">&nbsp;
+            <span>文字</span>
+        </div>
+        <div id="clear" class="circleBtn">&nbsp;
             <span>清空</span>
         </div>
-        <div id="reBack">&nbsp;
+        <div id="reBack" class="circleBtn">&nbsp;
             <span>撤回</span>
         </div>
-        <div id="repeat">&nbsp;
+        <div id="repeat" class="circleBtn">&nbsp;
             <span>重复</span>
         </div>
-        <div id="save">&nbsp;
+        <div id="save" class="circleBtn">&nbsp;
             <span>保存</span>
         </div>
     </div>
     <div class="container">
         <canvas id="canvas"></canvas>
     </div>
+
+
+    <div class="insertBlock">
+        <!-- 插入图片的控制块 -->
+        <div class="imgControl">
+            <input type="number" name="alpha">
+        </div>
+        <!-- 插入文字的控制块 -->
+        <div class="fontControl">
+            <input type="number">
+            <input type="color">
+        </div>
+    </div>
+
+    <!-- 历史窗口 -->
+    <div class="historyBlock"></div>
+
+    <input type="text" class="addFont" id="addFont">
+
+
     <script src="lib/js/index.js"></script>
 </body>
 
