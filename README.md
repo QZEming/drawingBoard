@@ -9,3 +9,4 @@ Using JavaScript to Make drawing board
 字体的导入：选择文字编辑工具后，在进入画板时更改鼠标样式，插入表单标签写入文字，对文字进行调整
 历史记录窗口
 test merge
+t
